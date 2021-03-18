@@ -1,12 +1,15 @@
 <template>
   <transition appear @before-enter="beforeEnter" @enter="enter">
     <div
-      class="flex flex-wrap justify-between opacity-0 z-10 shadow-lg m-3 border-2 border-gray-900 text-gray-700 rounded-lg p-2"
+      class="opacity-0 z-10 shadow-lg m-3 border-2 border-gray-900 text-gray-700 rounded-lg p-2"
     >
-      <div class="text-red-500 cursor-pointer" @click="removeItem">x</div>
-      <div class="">{{ quote.author }}</div>
-      <div class="">{{ quote.quote }}</div>
-      <div class="">{{ formattedDate }}</div>
+      <div class="flex justify-between mb-3">
+        <div class="text-red-500 cursor-pointer" @click="removeItem">x</div>
+        <div class="">{{ quote.author }}</div>
+        <div class="">{{ formattedDate }}</div>
+      </div>
+
+      <div class="flex flex-wrap">{{ quote.quote }}</div>
     </div>
   </transition>
 </template>
