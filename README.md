@@ -1,4 +1,4 @@
-# todo-app
+# application mazdev-vue
 
 ## Project setup
 ```
