@@ -84,7 +84,7 @@ export default {
         todos.value = [{ id, done, content: newTodo.value }, ...todos.value];
         newTodo.value = "";
       } else {
-        emit("badValue");
+        emit("bad-value");
       }
     };
 

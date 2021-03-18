@@ -10,7 +10,7 @@
       v-for="data in state.sortedQuotes"
       :key="data.id"
       :quote="data"
-      @remove-item="removeQuotes(data.id)"
+      @removeItem="removeQuotes(data.id)"
     />
   </div>
 </template>

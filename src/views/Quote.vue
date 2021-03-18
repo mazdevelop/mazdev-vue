@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <Toast v-if="showToast" :value="warrning" />
-    <Quotes @bad-value="triggerToast" />
+    <Quotes @badValue="triggerToast" />
   </div>
 </template>
 

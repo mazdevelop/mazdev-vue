@@ -9,7 +9,7 @@
     >
       <div class="mb-0 space-y-6">
         <h1 class="text-center font-semibold">Quote</h1>
-        <FormQuotes @add-quote="addQuote" />
+        <FormQuotes @addQuote="addQuote" />
         <hr />
         <QuotesList :state="state" @remove="removeItem" />
       </div>
